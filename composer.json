@@ -1,0 +1,24 @@
+{
+    "name": "buonzz/composer-library-template",
+    "description": "A library to provide authentication for CoreUser<RwBuild>",
+    "keywords": ["template", "composer", "package"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Darwin Biler",
+            "email": "buonzz@gmail.com"
+        }
+    ],
+    "type": "project",
+    "require": {
+		"php": ">=7.1"
+    },
+    "require-dev": {
+		"phpunit/phpunit": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tekana\\Auth\\": "src/"
+        }
+    }
+}
