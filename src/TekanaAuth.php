@@ -10,20 +10,26 @@
 */
 class TekanaAuth{
 
-   /**  @var string $m_SampleProperty define here what this variable is for, do this for every instance variable */
-   private $m_SampleProperty = '';
- 
-  /**
-  * Sample method 
-  *
-  * Always create a corresponding docblock for each method, describing what it is for,
-  * this helps the phpdocumentator to properly generator the documentation
-  *
-  * @param string $param1 A string containing the parameter, do this for each parameter to the function, make sure to make it descriptive
-  *
-  * @return string
-  */
-   public function method1($param1){
-			return "Hello World";
+
+   private $app_id;
+   private $app_secret;
+
+   public function __construct(string $app_id,string $app_secret)
+   {
+       $this->app_id = $app_id;
+       $this->app_secret = $app_secret;
+   }
+
+   public function getRedirectLoginHelper($param1){
+
+       $query = http_build_query([
+           'client_id' => '3',
+           'redirect_uri' => 'http://localhost:9000/callback',
+           'response_type' => 'code',
+           'scope' => '',
+       ]);
+
+       header("Location: ".'http://localhost:8000/oauth/authorize?'.$query); //core user
+
    }
 }

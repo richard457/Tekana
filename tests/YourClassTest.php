@@ -36,7 +36,7 @@ class YourClassTest extends TestCase
   public function testMethod1()
   {
 	$var = new Tekana\Auth\TekanaAuth;
-	$this->assertTrue($var->method1("hey") == 'Hello World');
+	$this->assertTrue($var->getRedirectLoginHelper("hey") == 'hey');
 	unset($var);
   } 
 }
