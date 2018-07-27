@@ -9,8 +9,6 @@
 *  @author yourname
 */
 class TekanaAuth{
-
-
    private $app_id;
    private $app_secret;
 
