@@ -1,4 +1,4 @@
-FreeGeoIP for Laravel 4 
+TekanaAuth for Laravel 5.6
 =======================
 
 [![Build Status](https://travis-ci.org/buonzz/laravel-4-freegeoip.svg?branch=master)](https://travis-ci.org/buonzz/laravel-4-freegeoip)
@@ -24,9 +24,3 @@ Installation
 Usage
 =====
 
-
-Credits
-=======
-
-* Alexandre Fiori for the awesome http://freegeoip.net web api
-* MaxMind for the data

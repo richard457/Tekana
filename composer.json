@@ -1,12 +1,12 @@
 {
-    "name": "buonzz/composer-library-template",
+    "name": "richard457/tekana-auth",
     "description": "A library to provide authentication for CoreUser<RwBuild>",
     "keywords": ["template", "composer", "package"],
     "license": "MIT",
     "authors": [
         {
             "name": "Darwin Biler",
-            "email": "buonzz@gmail.com"
+            "email": "beastar457@gmail.com"
         }
     ],
     "type": "project",
